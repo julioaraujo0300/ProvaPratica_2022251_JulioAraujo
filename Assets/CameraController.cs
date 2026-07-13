@@ -17,6 +17,7 @@ public class CameraController : MonoBehaviour
         SetActiveCamera(luaCam);
     }
 
+ 
     public void CameraGeral()  => SetActiveCamera(geralCam);
     public void CameraTerra() => SetActiveCamera(terraCam);
     public void CameraLua() => SetActiveCamera(luaCam);
@@ -26,6 +27,7 @@ public class CameraController : MonoBehaviour
         geralCam.Priority = inactivePriority;
         terraCam.Priority = inactivePriority;
         luaCam.Priority = inactivePriority;
+
 
         activeCam.Priority = activePriority;
     }
