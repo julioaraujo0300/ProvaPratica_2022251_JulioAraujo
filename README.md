@@ -18,7 +18,7 @@ Troca de cameras usando os tres botoes:
 - Vista geral
 - Vista da terra
 - Vista da lua
-- 
+  
 ## Como Funciona
 
 O script 'CameraController' mantém três câmaras virtuais na cena e altera a sua prioridade quando um botão é pressionado. A câmara ativa recebe a prioridade mais alta, por isso o Cinemachine mostra essa visão.
