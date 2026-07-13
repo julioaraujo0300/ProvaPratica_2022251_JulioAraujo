@@ -1,32 +1,26 @@
 # Prova Prática 2022251 - Julio Araujo
 
-This is a Unity project that presents a simple solar-system style scene with:
+Este projeto tem:
 
-- The Earth as the main reference object
-- A Moon orbiting the Earth
-- Three on-screen buttons that switch between different camera views
+- Terra e lua como plano
+- Lua a orbitar a terra
+- Tres botoes para trocar entre as tres cameras
 
-## Features
-
-- **General camera** for the overall scene
-- **Earth camera** focused on the Earth
-- **Moon camera** focused on the Moon
-- Button-based camera switching through the `CameraController` script
+- **General camera** Plano Geral
+- **Earth camera** Focado na terra
+- **Moon camera** Focado na Lua
+- `CameraController` gere as transiçoes
 
 ## Controls
 
-Use the three UI buttons in the scene to switch the active camera:
+Troca de cameras usando os tres botoes:
 
-- General view
-- Earth view
-- Moon view
+- Vista geral
+- Vista da terra
+- Vista da lua
+- 
+## Como Funciona
 
-## Project Notes
+O script 'CameraController' mantém três câmaras virtuais na cena e altera a sua prioridade quando um botão é pressionado. A câmara ativa recebe a prioridade mais alta, por isso o Cinemachine mostra essa visão.
 
-- Built in **Unity**
-- Uses **Cinemachine** for camera control
-- The active camera is managed by `Assets/CameraController.cs`
-
-## How It Works
-
-The `CameraController` script keeps three virtual cameras in the scene and changes their priority when a button is pressed. The active camera receives the highest priority, so Cinemachine displays that view.
+Para além deste existe também o MoonController, que gere a orbita da Lua, a qual pode ser manipulada no próprio editor
